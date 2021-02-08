@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* ZZCategoryKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZCategoryKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		818255306EBBC643CA85FF20 /* ZZCategoryKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZCategoryKit.podspec; path = ../ZZCategoryKit.podspec; sourceTree = "<group>"; };
-		8A12DA9977A096B503A44E6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		818255306EBBC643CA85FF20 /* ZZCategoryKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZZCategoryKit.podspec; path = ../ZZCategoryKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8A12DA9977A096B503A44E6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8CA552E938B8C8F2643748C6 /* Pods-ZZCategoryKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCategoryKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZZCategoryKit_Example/Pods-ZZCategoryKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BD2EA475921CC1485442E02E /* Pods_ZZCategoryKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZCategoryKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1856AE3D7B87378F49B841A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C1856AE3D7B87378F49B841A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C3FF56AAA475167CF12C1B18 /* Pods-ZZCategoryKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCategoryKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZZCategoryKit_Tests/Pods-ZZCategoryKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D81FD4C29C7B2123AE23769A /* Pods-ZZCategoryKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCategoryKit_Example.release.xcconfig"; path = "Target Support Files/Pods-ZZCategoryKit_Example/Pods-ZZCategoryKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,6 @@
 				000F93CE0737ED1BB16F9F18 /* Pods-ZZCategoryKit_Tests.debug.xcconfig */,
 				C3FF56AAA475167CF12C1B18 /* Pods-ZZCategoryKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +313,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZZCategoryKit_Example/Pods-ZZCategoryKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ZZCategoryKit/ZZCategoryKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZZCategoryKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
